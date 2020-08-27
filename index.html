@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Корм для кошек</title>
+    <link rel="stylesheet" href="source/css/style.css">
+    <!-- <script src="js/picturefill.js"></script> -->
+</head>
+
+<body>
+    <div class="body-overlay"></div>
+    <p class="products__question">Ты сегодня накормил кота?</p>
+    <section class="products">
+        <h1 class="products__title visually-hidden">Выберите корм</h1>
+        <aside class="products__item products__item--fuagra element" for="fuagra">
+            <div class="card">
+                <span class="element__dream">Сказочное заморское яство</span>
+                <span class="element__dream-selected-hover visually-hidden">Котэ не одобряет?</span>
+                <span class="element__dream-big">Нямушка</span>
+                <span class="element__taste">с фуа-гра</span>
+                <span class="element__gift"><b>10</b> порций <br>мышь в подарок</span>
+                <img class="element__img" src="source/img/cat-card.png" alt="cat" width="368" height="368">
+                <div class="element__weight cor">
+                    <span class="cor__value">0,5</span>
+                    <span class="cor__kg">кг</span>
+                </div>
+            </div>
+            <span class="products__availability">Чего сидишь? Порадуй котэ, <a href="#" class="product-buy">
+                    купи</a></span>
+            <span class="products__availability-disabled visually-hidden">Печалька, с фуа-гра закончился.</span>
+            <span class="products__availability-selected visually-hidden">Печень утки разварная с артишоками.</span>
+        </aside>
+        <aside class="products__item products__item--fish element" for="fuagra">
+            <div class="card">
+                <span class="element__dream">Сказочное заморское яство</span>
+                <span class="element__dream-selected-hover visually-hidden">Котэ не одобряет?</span>
+                <span class="element__dream-big">Нямушка</span>
+                <span class="element__taste">с рыбой</span>
+                <span class="element__gift"><b>40</b> порций <br><b>2</b> мыши в подарок</span>
+                <img class="element__img" src="source/img/cat-card.png" alt="cat" width="368" height="368">
+                <div class="element__weight cor">
+                    <span class="cor__value">2</span>
+                    <span class="cor__kg">кг</span>
+                </div>
+            </div>
+            <span class="products__availability">Чего сидишь? Порадуй котэ, <a href="#"
+                    class="product-buy">купи</a></span>
+            <span class="products__availability-disabled visually-hidden">Печалька, с рыбой закончился.</span>
+            <span class="products__availability-selected visually-hidden">Головы щучьи с чесноком да свежайшая
+                сёмгушка</span>
+        </aside>
+        <aside class="products__item products__item--fuagra element" for="fuagra">
+            <div class="card card--disabled">
+                <span class="element__dream element__dream--disabled">Сказочное заморское яство</span>
+                <span class="element__dream-selected-hover visually-hidden">Котэ не одобряет?</span>
+                <span class="element__dream-big element__dream-big--disabled">Нямушка</span>
+                <span class="element__taste element__taste--disabled">с курой</span>
+                <span class="element__gift element__gift--disabled"><b>100</b> порций <br><b>5</b> мышей в подарок
+                    <br>заказчик
+                    доволен</span>
+                <img class="element__img element__img--disabled" src="source/img/cat-card.png" alt="cat" width="368"
+                    height="368">
+                <div class="element__weight element__weight--disabled cor">
+                    <span class="cor__value">5</span>
+                    <span class="cor__kg">кг</span>
+                </div>
+            </div>
+            <span class="products__availability visually-hidden">Чего сидишь? Порадуй котэ, <a href="#"
+                    class="product-buy">купи</a></span>
+            <span class="products__availability-disabled">Печалька, с курой закончился.</span>
+            <span class="products__availability-selected visually-hidden">Филе из цыплят с трюфелями в бульоне.</span>
+        </aside>
+    </section>
+</body>
+<script src="source/js/api.js"></script>
+
+</html>

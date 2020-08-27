@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  .visually-hidden {
+    display: none;
+  }
+  
+  body {
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: black;
+    background-image: url("/source/img/pattern.png");
+    background-repeat: repeat;
+    overflow-x: hidden;
+    padding: 25px;
+
+    @media #{$mobile-width} {
+      max-width: 767px;
+      padding: 0;
+    }
+    }
+
+    html,body {
+      height: 100%;
+      min-height: 100%;
+  }
+
+  .body-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-image: url("/source/img/shadow.png");
+    z-index: -1;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  .svg-inline {
+    display: none;
+  }
+  
+  @font-face {
+    font-family: "Exo-thin";
+    src: url("/source/fonts/Exo2.0-Thin.otf") format("otf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
