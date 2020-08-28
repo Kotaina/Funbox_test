@@ -31,35 +31,30 @@ function selectItem(target) {
     }
 }
 
-function titleToggler(target) {
-    target.querySelector(".element__weight").classList.add("element__weight--selected-hover");
-    target.querySelector(".element__dream").classList.add("visually-hidden");
-    target.querySelector(".element__dream-selected-hover").classList.remove("visually-hidden");
+function onCardHighlight(target) {
+    let localAside = target.closest("aside");
+    localAside.querySelector(".card").classList.add("card--selected-hover");
+
+    localAside.querySelector(".element__weight").classList.add("element__weight--selected-hover");
+    localAside.querySelector(".element__dream").classList.add("visually-hidden");
+    localAside.querySelector(".element__dream-selected-hover").classList.remove("visually-hidden");
     setTimeout(function () {
-        target.querySelector(".element__weight").classList.remove("element__weight--selected-hover");
-        target.querySelector(".element__dream").classList.remove("visually-hidden");
-        target.querySelector(".element__dream-selected-hover").classList.add("visually-hidden");
+        localAside.querySelector(".card").classList.remove("card--selected-hover");
+
+        localAside.querySelector(".element__weight").classList.remove("element__weight--selected-hover");
+        localAside.querySelector(".element__dream").classList.remove("visually-hidden");
+        localAside.querySelector(".element__dream-selected-hover").classList.add("visually-hidden");
     }, 1000)
 }
 
 products.onclick = function (evt) {
     let target = evt.target;
-    // if (target.className != "card" && target.className != "product-buy") return;
     selectItem(target);
 }
 
 products.onmouseout = function (evt) {
     let target = evt.target;
-    if (target.className != "card") return;
-    console.log(target)
-    target.classList.add("card--selected-hover")
-    setTimeout(function () {
-        target.classList.remove("card--selected-hover")
-    }, 1000)
-    titleToggler(target);
+    if (target.className != "card" && target.className != "element__img") return;
+    onCardHighlight(target);
 }
 
-
-// body.addEventListener("click", function (evt) {
-//     console.log(evt.target)
-// })

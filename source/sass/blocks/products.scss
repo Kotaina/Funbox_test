@@ -8,6 +8,8 @@
     width: 1150px;
 
     @media #{$mobile-width} {
+        position: static;
+        width: auto;
         max-width: 767px;
         display: block;
       }
@@ -25,6 +27,8 @@
 }
 
 .products__question {
+    position: relative;
+    top: 100px;
     color: #ffffff;
     font-family: $font-exo;
     font-size: 36px;
@@ -69,6 +73,7 @@
 
     &--disabled {
         background-color: #b3b3b3;
+        cursor: default;
     }
 
     &--selected {
@@ -85,7 +90,7 @@
     bottom: 50px;
     left: 56px;
     color: white;
-    font-family: "Trebuchet MS";
+    font-family: $font-trebuchet;
     font-size: 14px;
     line-height: 16px;
     z-index: 10;
@@ -94,6 +99,7 @@
         color: #1698d9;
         text-decoration: none;
         border-bottom: 1px dotted;
+        font-family: $font-trebuchet;
     }
 
     &-disabled {
@@ -107,11 +113,13 @@
 
     &-selected {
         position: absolute;
+        right: -14px;
         text-align: center;
         bottom: 50px;
         font-size: 13px;
         width: 346px;
         color: white;
+        font-family: $font-trebuchet;
     }
 
     @media #{$mobile-width} {
