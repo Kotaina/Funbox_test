@@ -1,8 +1,8 @@
 .products {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     margin: 0 auto;
-    position: fixed;
     top: 25%;
     left: 9%;
     width: 1150px;
@@ -15,11 +15,14 @@
       }
 
       @media #{$tablet-width} {
+          position: static;
         flex-wrap: wrap;
         justify-content: center;
+        width: auto;
       }
 
       @media #{$desktop-width} {
+        position: fixed;
         flex-wrap: nowrap;
         justify-content: space-between;
       }
@@ -27,19 +30,35 @@
 }
 
 .products__question {
-    position: relative;
-    top: 100px;
+    position: fixed;
+    top: 122px;
+    left: 478px;
     color: #ffffff;
     font-family: $font-exo;
     font-size: 36px;
     font-weight: 100;
     text-align: center;
     text-shadow: 0 1px 1px #000000;
+
+    @media #{$mobile-width} {
+        position: static;
+      }
+
+    @media #{$tablet-width} {
+      position: static;
+      width: auto;
+    }
+
+    @media #{$desktop-width} {
+        position: fixed;
+      }
 }   
 
 .products__item {
     position: relative;
     background-color: transparent;
+    width: 319px;
+    margin: 0 auto;
     height: 560px;
 
     @media #{$tablet-width} {
@@ -102,6 +121,12 @@
         font-family: $font-trebuchet;
     }
 
+    @media #{$mobile-width} {
+        position: absolute;
+        bottom: 47px;
+        text-align: center;
+      }
+
     &-disabled {
         position: absolute;
         text-align: center;
@@ -121,12 +146,4 @@
         color: white;
         font-family: $font-trebuchet;
     }
-
-    @media #{$mobile-width} {
-        position: relative;
-        display: block;
-        text-align: center;
-        left: 0;
-        bottom: -10px;
-      }
 }

@@ -17,8 +17,13 @@
   },
   "homepage": "https://github.com/Kotaina/Funbox_test#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.14.1"
   }
 }

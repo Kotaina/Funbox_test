@@ -47,11 +47,11 @@ html {
   }
   
   @font-face {
-    font-family: "Exo2.0-Thin";
+    font-family: "Exo 2.0";
     src: url("/source/fonts/Exo2.0-Thin.otf") format("otf");
-    font-weight: 100;
+    font-weight: lighter;
     font-style: normal;
-    font-display: swap;
+    // font-display: swap;
   }
 
   @font-face {
